@@ -1,0 +1,44 @@
+1-install driver on window computer  (driver must be support twain) for canon and epson support twain
+find the driver specific for the scanner and install the one that support twainDirect
+(canon)
+https://www.canon-europe.com/support/products/imagerunner/imagerunner-2520.html?type=drivers&language=en&os=linux (64-bit)
+go to C:\Users\Lenovo\Downloads\Color_Network_ScanGear_2\Driver\x64 ----> setup
+to check if the driver is installed should check device manager under imaging devices
+
+
+(epson)
+https://epson.com/Support/Scanners/sh/s2
+
+
+
+2-add printer or scanner
+add prointers & scanner
+The printer that i want isnt listed
+add a local printer or network printer with manual settings
+create a new port : standard TCP/TP port
+add ip of the printer
+next
+use the driver thay is currently installed
+3- enter the scanner driver and put the ip of the scanner
+4- test the scanner using fax and scan
+5- install the twain direct scanner 32 bits
+https://github.com/twain/twain-direct/blob/master/Releases/twaindirect_01240000/TWAIN Direct Scanner (x86).msi
+click on view raw
+Or from usb copy folder to programs file (x86)
+
+then should install the data source manager before setup the twain
+
+
+
+
+
+6- install the data source manager
+https://sourceforge.net/projects/twain-dsm/ --> download --> unzip the installed file --> open the folder and get the twain 32 (TWAINDSM.dll) and put it in C://windows
+or
+copy the file from usb
+7- in setup
+select the scanner
+manage local --> install bonjour --> install certificates --> create firewall rules
+check first two checkbox and less the last one
+8- Restart the pc tp make sure that the mode window works
+by default the twain have a mode window to test restart the pc and make sure that the application will automatically appears as minimized window and by default be in the system tray in background

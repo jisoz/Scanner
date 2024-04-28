@@ -1,0 +1,21 @@
+for epson 
+Fix: ‘The scanner is in use or unavailable’ (E1460-B305) Epson
+solution: update driver -->device manager-> imaging devices -> right click on driver  -->search automatically ....
+          WIA--> got to services search for WIA ->stop -> automatic->apply ->start->OK
+
+
+
+
+
+
+C:\Program Files(86)\TWAIN Direct Scanner\data\
+we have 2 conf file for scanner and ontwain open cp change the copy in logs remove the x in  xloglevel
+
+we can now check C:users //roaming ... twaindirect..twaindriect.scanner logs
+
+if new scaner and dont know configuration for send task we can use twain directc application and test a lot of tasks we can check logs and in logs we grab the configuration that work
+
+https://github.com/twain/twain-direct/blob/master/Releases/twaindirect_01240000/TWAIN%20Direct%20Application%20(x86).msi
+
+
+
